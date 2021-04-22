@@ -11,9 +11,8 @@ class Api::V1::SideEffectsController < ApplicationController
   end
 
   def create
-    @side_effect = side_effect.new(side_effect_params)
+    @side_effect = SideEffect.new(side_effect_params)
     if @side_effect.save
-      session[:side_effect_id] = @side_effect.index
       render json: SideEffectSerializer.new(@side_effect), status: :created
     else
       resp = {
@@ -41,10 +40,10 @@ class Api::V1::SideEffectsController < ApplicationController
   private
 
     def set_side_effect
-      @side_effect = side_effect.find_by(id: params[:id])
+      @side_effect = SideEffect.find_by(id: params[:id])
     end
 
     def side_effect_params
-      params.require(:side_effect).permit(:name, :email, :password)
+      params.require(:side_effect).permit(:comment, :date, :user_id, :medicine_id)
     end
 end
