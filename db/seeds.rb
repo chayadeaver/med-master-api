@@ -7,10 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 Medicine.destroy_all
-SideEffect.destroy_all
 Dosage.destroy_all
 
 5.times do
-  User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+  User.create([{name: "#{Faker::Name.first_name} #{Faker::Name.last_name}", email: Faker::Internet.email, password: "password"}])
 end
-
