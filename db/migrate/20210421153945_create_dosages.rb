@@ -4,8 +4,8 @@ class CreateDosages < ActiveRecord::Migration[6.1]
       t.integer :user_id
       t.integer :medicine_id
       t.float :amount
-      t.string :startDate
-      t.string :endDate
+      t.string :start_date
+      t.string :end_date
       
     end
   end

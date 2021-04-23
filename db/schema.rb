@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2021_04_23_021044) do
     t.integer "user_id"
     t.integer "medicine_id"
     t.float "amount"
-    t.string "startDate"
-    t.string "endDate"
+    t.string "start_date"
+    t.string "end_date"
   end
 
   create_table "journals", force: :cascade do |t|
