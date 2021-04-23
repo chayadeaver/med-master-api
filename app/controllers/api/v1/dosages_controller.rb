@@ -44,6 +44,6 @@ class Api::V1::DosagesController < ApplicationController
     end
 
     def dosage_params
-      params.require(:dosage).permit(:amount, :startDate, :endDate, :user_id, :medicine_id)
+      params.require(:dosage).permit(:amount, :start_date, :end_date, :user_id, :medicine_id)
     end
 end
