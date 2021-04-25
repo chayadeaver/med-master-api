@@ -1,0 +1,18 @@
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+/home/darrickpang/.rvm/rubies/ruby-2.6.1/bin/ruby -I /home/darrickpang/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20210424-11392-sds5ic.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+gcc: error: unrecognized command line option '-Wduplicated-cond'
+gcc: error: unrecognized command line option '-Wmisleading-indentation'
+gcc: error: unrecognized command line option '-Wrestrict'
+gcc: error: unrecognized command line option '-Wimplicit-fallthrough=0'
+Makefile:243: recipe for target 'bcrypt_ext.o' failed
+make: *** [bcrypt_ext.o] Error 1
+
+make failed, exit code 2

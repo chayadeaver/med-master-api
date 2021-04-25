@@ -1,0 +1,18 @@
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/home/darrickpang/.rvm/rubies/ruby-2.6.1/bin/ruby -I /home/darrickpang/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20210424-11392-1feji7p.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/Darrick/Documents/medicine/med-master-api/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+gcc: error: unrecognized command line option '-Wduplicated-cond'
+gcc: error: unrecognized command line option '-Wmisleading-indentation'
+gcc: error: unrecognized command line option '-Wrestrict'
+gcc: error: unrecognized command line option '-Wimplicit-fallthrough=0'
+Makefile:243: recipe for target 'websocket_mask.o' failed
+make: *** [websocket_mask.o] Error 1
+
+make failed, exit code 2
