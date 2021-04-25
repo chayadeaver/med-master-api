@@ -32,3 +32,18 @@ end
 dosages.each do |amount, start_date, end_date|
   Dosage.create(amount: amount, start_date: start_date, end_date: end_date)
 end
+
+lyrica = Medicine.first
+xanax = Medicine.second
+melatonin = Medicine.third
+entresto = Medicine.fourth
+
+lyrica.dosages << Dosage.first
+xanax.dosages << Dosage.second
+melantonin.dosages << Dosage.third
+entresto.dosages << Dosage.fourth
+
+chaya.dosages << Dosage.first
+chaya.dosages << Dosage.second
+chaya.dosages << Dosage.third
+chaya.dosages << Dosage.fourth
