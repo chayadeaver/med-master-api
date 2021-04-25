@@ -1,5 +1,6 @@
 class Api::V1::UsersController < ApplicationController
   before_action :authorized, only: [:persist]
+
   def new
       user = User.new
   end

@@ -1,5 +1,5 @@
 class Dosage < ApplicationRecord
   belongs_to :user, optional: true
   belongs_to :medicine, optional: true
-  validates :amount, :startDate, :endDate, presence: true
+  validates :amount, :start_date, presence: true
 end
