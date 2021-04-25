@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  
   namespace :api do
     namespace :v1 do
       resources :dosages
-      resources :side_effects
       resources :users
+      resources :journals
       resources :medicines
     end
   end

@@ -7,10 +7,28 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 Medicine.destroy_all
-SideEffect.destroy_all
 Dosage.destroy_all
 
-5.times do
-  User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+chaya = User.create(name: "Chaya", email: "chaya@email.com", password: "password")
+
+meds = [
+  ["Lyrica", "Dr. Shah"],
+  ["Xanax", "Dr. Mullan"],
+  ["Melatonin", "Dr. Pang"],
+  ["Entresto", "Dr. Lee"]
+]
+
+dosages = [
+  [300.0, "02/10/2021", "04/1/2021"],
+  [0.25, "01/04/2021", "03/31/2021"],
+  [0.5, "02/23/2021", "04/15/2021"],
+  [103, "01/01/2021", "02/10/2021"]
+]
+
+meds.each do |name, doctors_name |
+  Medicine.create(name: name, doctors_name: doctors_name)
 end
 
+dosages.each do |amount, start_date, end_date|
+  Dosage.create(amount: amount, start_date: start_date, end_date: end_date)
+end
